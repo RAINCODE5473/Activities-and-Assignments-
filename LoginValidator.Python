@@ -1,0 +1,33 @@
+def login_validator(username, password):
+   
+    default_username = "Rin"
+    default_password = "201923"
+
+    if username == default_username and password == default_password:
+        return "success"
+
+    else:
+        return "failed"
+
+if __name__ == "__main__":
+
+    attempts = 0
+
+    while attempts < 5:
+        username = input("Enter your Username: ")
+        password = input("Enter your Password: ")
+
+        status = login_validator(username, password)
+
+        if status == "success":
+            print("Login Successful")
+            break
+
+        else:
+            print("Login Failed. Please try again")
+
+            attempts += 1
+            print(f"Attempts {attempts}")
+
+    if attempts == 5:
+        print("You've reached 5 attempts. Please try again later")
