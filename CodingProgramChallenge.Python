@@ -1,0 +1,6 @@
+def count_by_tens():
+  
+  for i in range(0, 101, 10):
+    print(i)
+    
+count_by_tens()
