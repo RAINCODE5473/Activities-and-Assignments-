@@ -1,0 +1,21 @@
+def main():
+    
+    Name = input("Enter Name: ")
+    Sex = input("Enter Sex: ")
+    Age = int(input("Enter Age: "))
+
+    Height = float(input("Enter Height: "))
+
+    Weight = float(input("Enter Weight: "))
+
+    
+    print("Name:", Name)
+    print("Sex:", Sex)
+    print("Age:", Age)
+
+    print("Height:", Height)
+
+    print("Weight:", Weight)
+
+if __name__ == "__main__":
+    main()
