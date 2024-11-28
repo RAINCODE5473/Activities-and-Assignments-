@@ -1,0 +1,11 @@
+def main():
+    
+    print("Enter Temperature")
+    t1 = float(input())
+
+    
+def convert(t1):
+   pass
+
+if __name__ == "__main__":
+    main()
