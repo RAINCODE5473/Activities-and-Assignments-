@@ -4,12 +4,15 @@ public class LoginSystem {
     public static void main(String[] args) {
         
         String Username = "Rin";
-        String Password = "Ilikerain";
+        String Password = "clouds";
         
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Enter your username: ");
+
         String username = scanner.nextLine();
         System.out.print("Enter your password: ");
+
         String password = scanner.nextLine();
 
         if (username.equals(Username) && password.equals(Password)) {
@@ -29,6 +32,7 @@ public class LoginSystem {
              System.out.println();
              
              System.out.println(" Enter your Choice");
+
              String choice = scanner.nextLine();
              System.out.println();
              
@@ -37,8 +41,10 @@ public class LoginSystem {
        
       } else if (choice.equals("B")) {
           System.out.println(" Results: " + ("Subtraction"));
+
       } else if (choice.equals("C")) {
              System.out.println(" Results: " + ("Multiplication"));
+
       } else if (choice.equals("D")) {
              System.out.println(" Results:" + ("Division")); 
              
@@ -48,33 +54,36 @@ public class LoginSystem {
              System.out.println(); 
              
       System.out.println(" Enter your first number");
+
        double num1 = scanner.nextDouble();
        System.out.println(" Enter your second number");
+
        double num2 = scanner.nextDouble();
-       
-       
-       
+           
       if (choice.equals("A")) {
        System.out.println(" Results: " + (num1 + num2 )); 
        
       } else if (choice.equals("B")) {
           System.out.println(" Results: " + (num1 - num2));
+
       } else if (choice.equals("C")) {
              System.out.println(" Results: " + (num1 * num2));
+
       } else if (choice.equals("D")) {
              if (num2 != 0) 
-             System.out.println("Error: Division by zero!");             
+             System.out.println("Error: Division by zero!"); 
+
              System.out.println(" Results:" + (num1 / num2)); 
              
         } else {
-           System.out.println(" Balik nasad ignag wa sa Choices!!"); }
-           
-           
+           System.out.println(" Wala na lagi abno! "); }
+          
              System.out.println();
+
              System.out.print(" !Problem Solved! ");
+
              System.out.println();
-             
-        
+            
              } else {	
             System.out.println("Invalid username or password.");                                              
             }            
